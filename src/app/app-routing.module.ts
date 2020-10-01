@@ -5,6 +5,7 @@ import { BookComponent } from './books/book/book.component';
 import { BooksComponent } from './books/books.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
+import { AllbooksComponent } from './books/allbooks/allbooks.component';
 
 const booksRoutes: Routes = [
   {path:':id',component:BookComponent}
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path:'contact',component:ContactComponent},
   {path:'books',component:BooksComponent,
     children:booksRoutes},
+  {path:'allbooks',component:AllbooksComponent},
   {path:'',redirectTo:'home',pathMatch:'full'},
   {path:'**',component:HomeComponent},
 ];

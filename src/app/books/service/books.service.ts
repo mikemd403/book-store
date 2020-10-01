@@ -19,4 +19,8 @@ export class BooksService {
     //tslint:disable-next-line:radix
     return this.books.find(book=>book.id===Number.parseInt(id));
   }
+
+  public getBookCollection():Book[]{
+    return this.books;
+  }
 }

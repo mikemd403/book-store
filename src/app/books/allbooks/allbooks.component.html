@@ -1,0 +1,23 @@
+<div>
+  <h2>The Book Collection</h2>
+  <table>
+    <tr>
+      <th>Id</th>
+      <th>Category</th>
+      <th>Title</th>
+      <th>Cost</th>
+      <th>Description</th>
+      <th>Year</th>
+      <th>Author(s)</th>
+    </tr>
+    <tr *ngFor="let book of bookCollection">
+      <td>{{book.id}}</td>
+      <td>{{book.category}}</td>
+      <td>{{book.title}}</td>
+      <td>{{book.cost}}</td>
+      <td>{{book.description}}</td>
+      <td>{{book.year}}</td>
+      <td><span [innerHTML]="book.authors|authornames"></span></td>
+    </tr>
+  </table>
+</div>

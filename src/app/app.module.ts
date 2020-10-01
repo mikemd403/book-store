@@ -10,6 +10,7 @@ import { ContactComponent } from './contact/contact.component';
 import { BooksComponent } from './books/books.component';
 import { BookComponent } from './books/book/book.component';
 import { AuthornamesPipe } from './pipes/authornames.pipe';
+import { AllbooksComponent } from './books/allbooks/allbooks.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AuthornamesPipe } from './pipes/authornames.pipe';
     ContactComponent,
     BooksComponent,
     BookComponent,
-    AuthornamesPipe
+    AuthornamesPipe,
+    AllbooksComponent
   ],
   imports: [
     BrowserModule,
