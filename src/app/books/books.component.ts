@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router, Routes } from '@angular/router';
 
 @Component({
   selector: 'app-books',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./books.component.css']
 })
 export class BooksComponent implements OnInit {
-
-  constructor() { }
+  constructor(private router:Router, private route:ActivatedRoute) { }
 
   ngOnInit(): void {
+  }
+
+  submit(value:string){
+    this.router.navigate(['./',value],{relativeTo:this.route});
   }
 
 }
